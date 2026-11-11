@@ -446,7 +446,8 @@
       "name": "[variables('diagnosticsStorageAccountName')]",
       "properties": {
         "allowBlobPublicAccess": false,
-        "supportsHttpsTrafficOnly": true
+        "supportsHttpsTrafficOnly": true,
+        "minimumTlsVersion": "TLS1_2"
       },
       "sku": {
         "name": "Standard_LRS",
