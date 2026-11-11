@@ -429,7 +429,8 @@
       "name": "[if(not(empty(parameters('cfeStorageAccountName'))), parameters('cfeStorageAccountName'), concat(parameters('uniqueString'), 'stcfe'))]",
       "properties": {
         "allowBlobPublicAccess": false,
-        "supportsHttpsTrafficOnly": true
+        "supportsHttpsTrafficOnly": true,
+        "minimumTlsVersion": "TLS1_2"
       },
       "sku": {
         "name": "Standard_LRS",
